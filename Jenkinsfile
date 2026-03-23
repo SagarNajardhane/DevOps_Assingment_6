@@ -6,7 +6,6 @@ pipeline {
         githubPush()
     }
 
-    
     stages {
 
         stage('Checkout') {
