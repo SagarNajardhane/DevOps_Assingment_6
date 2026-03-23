@@ -9,6 +9,7 @@ pipeline {
     stages {
 
         stage('Checkout') {
+            
             steps {
                 git branch: 'main',
                     url: 'https://github.com/SagarNajardhane/DevOps_Assingment_6.git'
