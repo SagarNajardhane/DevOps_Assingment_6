@@ -2,22 +2,20 @@ pipeline {
 
     agent any
 
+    tools {
+        maven 'Maven3'
+        jdk 'Java17'
+    }
+
     triggers {
         githubPush()
     }
 
     stages {
 
-        stage('Checkout') {
-            
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/SagarNajardhane/DevOps_Assingment_6.git'
-            }
-        }
-
         stage('Build') {
             steps {
+                bat 'mvn -v'
                 bat 'mvn clean compile'
             }
         }
