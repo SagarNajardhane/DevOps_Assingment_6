@@ -2,11 +2,16 @@ pipeline {
 
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/SagarNajardhane/DevOps_Assingment_6.git'
+                git branch: 'main',
+                    url: 'https://github.com/SagarNajardhane/DevOps_Assingment_6.git'
             }
         }
 
