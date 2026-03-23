@@ -8,6 +8,7 @@
 		<version>4.0.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps_Ass_6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
